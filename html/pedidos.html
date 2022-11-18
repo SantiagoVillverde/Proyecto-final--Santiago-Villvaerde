@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hornito de azúcar es una panadería familiar con productos de excelente precio y una calidad increible">
+    <meta name="keywords" content="panaderia, tortas, facturas, pan, galletitas, harina, saavedra, donas, medialunas, pasteleria, pedidos, cumpleaños, fiestas, sabor">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../sass/style.css">
+</head>
+<body class="fondo">
+    
+    <header>
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="../index.html"><img class="logo" src="../img/hornito.png" alt=""></a>
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion_links animate__flash">Nosotros</a>
+                    <a href="queusamos.html" class="navegacion_links">¿Qué usamos?</a>
+                    <a href="productos.html" class="navegacion_links">Productos</a>
+                    <a href="pedidos.html" class="navegacion_links">Pedidos</a>
+                    <a href="https://www.instagram.com/hornitodeazucar/" class="insta"><i class="fa-brands fa-instagram"></i></a>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="banner"></div>
+
+        <section>
+            <H1 class="centrar-texto contacto">Contacto</H1>
+    
+            <form class="formulario centrar-texto">
+                <div class="campo auto">
+                    <label class="campo__label" for="nombre">Nombre</label>
+                    <input class="campo__field" type="text" placeholder="Tu nombre" id="nombre">
+                </div>
+                <div class="campo">
+                    <label class="campo__label" for="telefono">Telefono</label>
+                    <input class="campo__field" type="number" placeholder="Tu telefono" id="telefono">
+                </div>
+                <div class="campo">
+                    <label class="campo__label" for="email">E-mail</label>
+                    <input class="campo__field" type="email" placeholder="Tu e-mail" id="email">
+                </div>
+                <div class="campo">
+                    <label class="campo__label" for="mensaje">pedido</label>
+                    <textarea class="campo__field campo__field--textarea" id="mensaje" placeholder="Tu pedido"></textarea>
+                </div>
+                <div class="campo">
+                    <input type="submit" value="Enviar" class="boton boton--primario">
+                </div>
+            </form>
+        </section>
+
+
+        <footer class="footer">
+            <div class="contenedor">
+                <div class="barra">
+                    <nav class="navegacion reducir-texto">
+                        <a href="nosotros.html" class="navegacion_links animate__flash">Nosotros</a>
+                        <a href="queusamos.html" class="navegacion_links">¿Qué usamos?</a>
+                        <a href="productos.html" class="navegacion_links">Productos</a>
+                        <a href="pedidos.html" class="navegacion_links">Pedidos</a>
+                        <a href="https://www.instagram.com/hornitodeazucar/" class="insta"><i class="fa-brands fa-instagram"></i></a>
+                        <h6 class="centrar reducir-texto">Todos los derechos reservados. Hornito de azucar</h6>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+
+    </header>
+
+
+
+</body>
+<script src="js/wow.min.js"></script>
+            <script>
+            new WOW().init();
+            </script>
+</html>

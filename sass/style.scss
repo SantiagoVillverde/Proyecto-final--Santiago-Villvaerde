@@ -1,0 +1,486 @@
+:root {
+    --fuenteheading: "PT Sans", sans-serif;
+    --fuentreparrafos: "Open Sans", sans-serif;
+
+    --cafe: #784d3c;
+    --blanco: #ffffff;
+    --blancopastel_: #f0eeeb;
+    --negro: #000000;
+    --verdepastel: #56ff95;
+    --violetapastel: #D587FF;
+    --rosapastel: #FF82F7;
+    --doradopastel: #ffc349 ;
+
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box; 
+}
+
+
+/*Box model*/
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 1.6rem;
+    font-family: var(--fuentreparrafos);
+    line-height: 2;
+}
+
+/* Globales */
+
+.contenedor {
+    width: min(85%, 120rem);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--fuenteheading);
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+
+h4{
+    font-size: 2.8rem;
+}
+h5{
+    font-size: 1.5rem;
+}
+h6{
+    font-size: 1rem;
+}
+
+p{
+    font-size: 2rem;
+    font-family: var(--fuentreparrafos);
+    font-weight: 500;
+}
+
+img {
+    max-width: 100%;
+}
+
+body{
+    background: rgb(247,247,247);
+    background: linear-gradient(270deg, rgba(247,247,247,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+.logo {
+    margin: 0;
+    max-width: 10rem;
+    max-height: 10rem;
+}
+
+.fondo {
+    background-image: url(../img/fondito.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Utilidades */
+
+.no-margin {
+    margin: 0;
+}
+.no-padding {
+    padding: 0;
+}
+.padding-arriba {
+    padding-top: 2rem;
+}
+.centrar-texto {
+    text-align: center;
+}
+.margin1 {
+    margin: 1rem;
+}
+.marginarriba {
+    margin-top: 5rem;
+}
+.agrandar-texto {
+    font-size: 3rem;
+}
+.centrar {
+    display: block;
+    margin: auto;
+}
+.auto {
+    margin: auto;
+    padding: auto;
+}
+.reducir-texto{
+    font-size: medium;
+}
+@media (max-width: 512px) {
+    .reducir-texto a{
+        font-size: 1.5rem;
+    }
+
+}
+.reducir{
+    max-width: 10rem;
+}
+/* Navegacion */
+
+.barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding-top: 1rem;
+    width: 100%;
+    height: 7rem;
+    position: relative;
+    text-align: left;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+@media (max-width: 580px) {
+    .barra{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding-top: 1rem;
+        margin-top: 1rem;
+    }
+}
+@media (max-width: 480px) {
+    .barra {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    } 
+    
+}
+
+.navegacion {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+@media (max-width: 480px) {
+    .navegacion {
+        display: flex;
+        gap: 1rem;
+        a{
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.navegacion_links {
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--negro);
+} 
+
+a:hover{
+    color: var(--rosapastel);
+}
+
+
+/* Banner */
+
+.banner {
+    margin: 3rem auto;
+    width: 200rem;
+    height: 6rem;
+    background-image: url(../img/cake-balls-g26c22f96f_1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    -webkit-box-shadow: -1px -1px 30px 2px rgba(0,0,0,0.61);
+    -moz-box-shadow: -1px -1px 30px 2px rgba(0,0,0,0.61);
+    box-shadow: -1px -1px 30px 2px rgba(0,0,0,0.61);
+}
+@media (max-width: 580px) {
+    .banner {
+        margin: 9rem 0 auto;
+        width: 200rem;
+        height: 5rem;
+        background-image: url(../img/cake-balls-g26c22f96f_1920.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        max-width: 100%;
+        -webkit-box-shadow: -1px -1px 30px 2px rgba(0,0,0,0.61);
+        -moz-box-shadow: -1px -1px 30px 2px rgba(0,0,0,0.61);
+        box-shadow: -1px -1px 30px 2px rgba(0,0,0,0.61);
+    }
+}
+@media (max-width: 530px) {
+    .banner {
+        margin: 12rem 0 auto;
+        width: 200rem;
+        height: 5rem;
+        background-image: url(../img/cake-balls-g26c22f96f_1920.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        max-width: 100%;
+        -webkit-box-shadow: -1px -1px 30px 2px rgba(0,0,0,0.61);
+        -moz-box-shadow: -1px -1px 30px 2px rgba(0,0,0,0.61);
+        box-shadow: -1px -1px 30px 2px rgba(0,0,0,0.61);
+    }
+}
+
+.texto-eslogan {
+    font-size: 3rem;
+}
+
+/* footer */
+
+.footer {
+    background-color: #FFEAE3;
+    // margin-top: 2rem;
+    margin: 0 auto;
+    text-align: center;
+}
+.barra_footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+@media (max-width: 780px) {
+    .barra_footer{
+        gap: 0rem;
+    }
+    
+}
+
+@media (max-width: 816px) {
+    .footer{
+        a{
+            font-size: 1.6rem;
+        }
+        h6{
+            font-size: small;
+        }
+    }
+}
+@media (max-width: 780px) {
+    .footer{
+        a{
+            font-size: 1.2rem;
+        }
+        h6{
+            font-size: 1rem;
+        }
+    }
+}
+
+/* index */
+
+.contenido-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+}
+@media (max-width: 750px) {
+    .contenido-principal{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        padding: 1rem;
+        margin: 2rem;
+        font-size: 2rem;
+    }
+}
+@media (max-width: 580px) {
+    .contenido-principal{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+        padding: 1rem;
+        margin: 2rem;
+        font-size: 2rem;
+    }
+}
+.delicias{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+@media (max-width: 760px) {
+    .delicias{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        padding: 1rem;
+        margin: 2rem;
+        font-size: 2rem;
+    }
+}
+@media (max-width: 580px) {
+    .delicias{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+        padding: 1rem;
+        margin: 2rem;
+        font-size: 2rem;
+    }
+}
+
+
+
+/* productos */
+
+.contenido-productos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+}
+
+.imagenes {
+    max-width: 100%;
+    width: 20rem;
+    height: 20rem;
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    margin: 1.5rem; 
+}
+@media (max-width: 700px) {
+    .galeria{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        padding: 2rem;
+        margin: 1.5rem; 
+    }
+}
+
+
+/* Nosotros */
+
+.imagen {
+    max-width: 100%;
+    width: 60rem;
+    height: 60rem;
+}
+
+.nosotros {
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 2 auto;
+}
+@media (max-width: 768px) {
+    .nosotros{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        margin-top: 2 auto;
+    }
+    .orden1 {
+        grid-row: 3 / 4;
+        
+    }
+}
+
+/* Pedidos */
+
+.contacto {
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: bold;
+    color: var(--violetapastel);
+}
+
+.formulario {
+    background-color: var(--blanco);
+    // margin: -5rem auto 0 auto;
+    width: 100%;
+    padding: 5rem;
+    
+}
+.campo {
+    display: flex;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+@media (max-width: 420px) {
+    .campo{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+}
+.campo__label {
+    flex: 0 0 8rem;
+    text-align: right;
+}
+@media (max-width: 420px) {
+    .campo__label {
+        flex: 0 0 8rem;
+        text-align: center;
+    }
+}
+.campo__field {
+    flex: 1;
+    border: 1px solid grey;
+}
+.campo__field--textarea {
+    height: 20rem;
+}
+.boton{
+    background-color: var(--violetapastel);
+    color: var(--negro);
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5rem;
+    border: none;
+}
+.boton:hover {
+    cursor: pointer;
+}
+
+/* ¿Que usamos? */
+
+.ingredientes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    margin: 1.5rem;   
+}
+@media (max-width: 780px) {
+    .ingredientes{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        margin-top: 2 auto;
+    }
+    .orden1 {
+        grid-row: 3 / 4;
+        
+    }
+}
